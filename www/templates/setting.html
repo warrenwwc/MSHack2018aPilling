@@ -1,0 +1,18 @@
+<ion-view title="Setting" id="page4">
+  <ion-content padding="true" class="has-header">
+    <form id="setting-form2" class="list">
+      <h3 id="setting-heading1" style="color:#000000;">Medicine Name</h3>
+      <label class="item item-input" id="setting-input1">
+        <span class="input-label">Medicine Name</span>
+        <input type="text" placeholder="">
+      </label>
+      <h3 id="setting-heading3" style="color:#000000;">Frequency</h3>
+      <ion-item class="range range-positive" id="setting-range1">{{hours}} Hours
+        <input type="range" value="4" min="0" max="24" step="1" name="Hours" ng-model="hours">
+      </ion-item>
+      <h3 id="setting-heading4" style="color:#000000;">Photo</h3>
+      <button id="setting-button8" class="button button-stable button-block">Click here to upload</button>
+    </form>
+    <a ui-sref="tabsController.alarm()" id="setting-button9" class="button button-balanced button-block">Done</a>
+  </ion-content>
+</ion-view>

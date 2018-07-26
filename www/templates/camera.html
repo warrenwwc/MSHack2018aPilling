@@ -1,0 +1,27 @@
+<ion-view title="Camera" id="page3">
+  <ion-content padding="true" class="has-header">
+    <div style="margin: 0px; line-height: 390px; background-color: rgb(232, 235, 239); text-align: center;">
+      <i class="icon ion-image" style="font-size: 64px; color: rgb(136, 136, 136); vertical-align: middle;"></i>
+    </div>
+    <a ng-click="TakePics()" id="start-button" class="button button-balanced button-block">{{buttonText}}</a>
+    <ion-list id="camera-list6">
+      <ion-item class="item-avatar" id="camera-list-item26">
+          <img src="img/vRpzF9xQYekslZOqIq0U_FebricolTab100mg.jpg">
+          <h2>Febricol Tab 100mg</h2>
+          <p>{{febricol}}</p>
+      </ion-item>
+      <ion-item class="item-avatar" id="camera-list-item27">
+          <img src="img/DTWo03oFSgSmlE7VpDuV_Cevit100mg.jpg">
+          <h2>Cevit 100mg</h2>
+          <p>{{cevit}}</p>
+      </ion-item>
+    </ion-list>
+    <ion-list id="camera-list7">
+        <ion-item ng-repeat="obj in medicines track by $index" class="item-avatar" id="camera-list-item28">
+            <img src="img/cross.jpg">
+          <h2>{{obj.tagName}}</h2>
+          <p>Not Required: ({{obj.probability}})</p>
+        </ion-item>
+      </ion-list>
+  </ion-content>
+</ion-view>
